@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Gallery</title>       
+        <link rel="stylesheet" href="lightbox.css">
+        <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: #54786d;
+            align-items: center;
+            justify-content: center;
+        }
+        .container img {
+            border-radius: 50%;
+            margin-top: 10%;
+            border-style:dashed;
+            border-color: #003122;
+            
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 80px;
+            background-color: #c2dfd1;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+        }
+
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li{
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #navbar li a{
+            text-decoration: none;
+            font-size: 16px; 
+            font-weight: 600;
+            color: #003122;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active{
+            color: #01a372;
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after{
+            content: "";
+            width: 40%;
+            height: 2px;
+            background: #003122;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        
+        h1 {    
+            font-family:'Times New Roman', Times, serif;
+            font-size: 30px;
+            color: #003122;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 8px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+        .gallery img {
+            width: 100%;
+        }
+
+        footer {
+            padding: 10px 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #c2dfd1;
+            }
+
+            footer .col{
+                padding: 40px 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+
+            footer .logo{
+                margin-bottom: 30px;
+            }
+
+            footer h4{
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+
+            footer p {
+            font-size: 16px;
+            color: #003122;  
+            margin: 15px 0 20px 0;
+            }
+
+            footer a{
+                font-size: 18px;
+                text-decoration: none;
+                color: #001a12;
+                margin-bottom: 10px;
+            }
+
+            footer .follow {
+                margin-top: 20px;
+            }
+
+            footer .follow i{
+                color: #001a12;
+                padding-right: 5px;
+                cursor: pointer;
+            }
+
+            footer .follow i:hover,
+            footer a:hover{
+                color:  #01a372;
+            }
+
+            footer .copyright {
+                width: 100%;
+                text-align: center;
+            }
+        
+          </style>
+    </head>
+
+    <body>
+          
+        <section id="header">
+            <a href="#"><img src="Books N’ NOOKS.png" alt="my Logo" width="80" height="80"> </a>
+        
+            <div>
+                <ul id="navbar">
+                    <li><a href="http://localhost/ACT1-5/Activity%202.html#">Home</a></li>
+                    <li><a href="http://localhost/ACT1-5/Activity%201.html">About</a></li>
+                    <li><a href="http://localhost/ACT1-5/Activity%203.html">Socials</a></li>
+                    <li><a class="active"href="http://localhost/Act1-5/Activity%205.html">Gallery</a></li>                   
+                    <li><a href="http://localhost/PRODUCTs/Booksbw.html">Books</a></li>
+                    <li><a href="http://localhost/Act1-5/Activity%204%20home.html">Special</a></li>
+                </ul>
+            </div>
+        </section>
+
+  
+        <h1> MY GALLERY </h1>
+        
+        <div class="container">
+            <div class="gallery">
+
+            <a href ="1.jpg" data-lightbox="models" data-title="KZ Broom Broom Iyak">
+                <img src="1.jpg">   
+            </a>     
+
+            <a href ="2.jpg" data-lightbox="models" data-title="Kesi Drunk sa Cafe">
+                <img src="2.jpg">   
+            </a>  
+
+            <a href ="3.jpg" data-lightbox="models" data-title="Kesi Drunk sa Apartment ni mathew">
+                <img src="3.jpg">   
+            </a> 
+
+            <a href ="4.jpg" data-lightbox="models" data-title="KZ Purple Back">
+                <img src="4.jpg" width="100"height="380">   
+            </a>  
+
+            <a href ="5.jpg" data-lightbox="models" data-title="KZ Bling Bling Eyes">
+                <img src="5.jpg" width="100"height="380">   
+            </a>
+
+            <a href ="6.jpg" data-lightbox="models" data-title="KZ Wedding Coordinator">
+                <img src="6.jpg">   
+            </a> 
+
+            <a href ="7.jpg" data-lightbox="models" data-title="Kesi Bleh">
+                <img src="7.jpg">   
+            </a>
+
+            <a href ="8.jpg" data-lightbox="models" data-title="Kesi Nabaliw sa Progit">
+                <img src="8.jpg">   
+            </a> 
+
+            <a href ="9.jpg" data-lightbox="models" data-tit4le="KZ sa Fam Reunion">
+                <img src="9.jpg">   
+            </a> 
+
+            <a href ="10.jpg" data-lightbox="models" data-tit4le="KZ Hev Abi Era">
+                <img src="10.jpg">   
+            </a> 
+
+            <a href ="11.jpg" data-lightbox="models" data-tit4le="KZ Broom Broom Purple">
+                <img src="11.jpg">   
+            </a> 
+
+            <a href ="12.jpg" data-lightbox="models" data-tit4le="KZ Nagpapacute para kay crush">
+                <img src="12.jpg">   
+            </a> 
+
+            <a href ="13.jpg" data-lightbox="models" data-tit4le="KZ with her bestie">
+                <img src="13.jpg">   
+            </a> 
+
+            <a href ="14.jpg" data-lightbox="models" data-tit4le="KZ with her bestie v2">
+                <img src="14.jpg">   
+            </a> 
+
+            <a href ="15.jpg" data-lightbox="models" data-tit4le="KZ Fav top">
+                <img src="15.jpg">   
+            </a> 
+
+            <a href ="16.jpg" data-lightbox="models" data-tit4le="Kesi nabaliw sa HUMCOM">
+                <img src="16.jpg">   
+            </a> 
+
+            <a href ="17.jpg" data-lightbox="models" data-tit4le="Kesi RAWR sa Foam">
+                <img src="17.jpg">   
+            </a> 
+
+            <a href ="18.jpg" data-lightbox="models" data-tit4le="Kesi MWA MWA">
+                <img src="18.jpg">   
+            </a> 
+
+            <a href ="19.jpg" data-lightbox="models" data-tit4le="Confused and lost Kesi">
+                <img src="19.jpg" width="100"height="380">   
+            </a> 
+            
+            <a href ="20.jpg" data-lightbox="models" data-tit4le="KZ UBIANO">
+                <img src="20.jpg">   
+            </a> 
+
+            <a href ="21.jpg" data-lightbox="models" data-tit4le="KZ Broom Broom Iyak">
+                <img src="21.jpg">   
+            </a> 
+
+            <a href ="22.jpg" data-lightbox="models" data-tit4le="KZ .5">
+                <img src="22.jpg">   
+            </a> 
+
+            <a href ="23.jpg" data-lightbox="models" data-tit4le="KZ Broom Broom Thumbs Up">
+                <img src="23.jpg">   
+            </a> 
+
+            <a href ="24.jpg" data-lightbox="models" data-tit4le="KZ Filming sa Cafe">
+                <img src="24.jpg">   
+            </a> 
+            
+            <a href ="25.jpg" data-lightbox="models" data-tit4le="Kz Purple Back Mini">
+                <img src="25.jpg">   
+            </a> 
+            
+            <a href ="26.jpg" data-lightbox="models" data-tit4le="KZ Gigil na kay tropa">
+                <img src="26.jpg">   
+            </a> 
+            
+            <a href ="27.jpg" data-lightbox="models" data-tit4le="KZ ingame sa larong ganda-gandahan">
+                <img src="27.jpg">   
+            </a> 
+            
+            <a href ="28.jpg" data-lightbox="models" data-tit4le="Kesi Hev Abi v2">
+                <img src="28.jpg">   
+            </a> 
+            
+            <a href ="29.jpg" data-lightbox="models" data-tit4le="Kesi Hev Abi v3">
+                <img src="29.jpg">   
+            </a> 
+            
+            <a href ="30.jpg" data-lightbox="models" data-tit4le="KZ ganda-gandahan sa broom broom iyak">
+                <img src="30.jpg">   
+            </a> 
+            
+            <a href ="32.jpg" data-lightbox="models" data-tit4le="Kesi kyutie">
+                <img src="32.jpg">   
+            </a> 
+            
+            <a href ="33.jpg" data-lightbox="models" data-tit4le="PRETTY KZ always">
+                <img src="33.jpg">   
+            </a> 
+
+            <!--Replace nalang the pics anteh-->
+            <!--OPEN YOUR CSS FILE, REPLACE THE PATHS FOR NEXT AND PREV-->
+            </div>
+        </div>
+
+        
+    <footer>
+        <div class="col">
+            <img class="logo" src="Books N’ NOOKS.png" alt="Logo" width="80" height="80">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Sa puso ni ... Secret</p>
+            <p><strong>Phone:</strong> 09457728145 / 09504597488</p>
+            <p><strong>Email:</strong> Angagkakz@gmail.com</p>
+
+            <div class="follow">
+                <h4>Follow me: </h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Seller</a>
+            <a href="#">Contact Seller</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p> © 2024, All rights reserved. Made By: KZ ANGAGKA, BSIT1-IDA2</p>
+        </div>
+
+    </footer>
+
+        <script src="lightbox-plus-jquery.js"></script>
+    </body>
+</html>
+

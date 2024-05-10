@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mom Homepage</title>
+    <style>
+
+    body {
+      background-image: url('background test.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    
+    img {
+      margin-top: 5%;
+      border-radius: 50%;
+    }
+
+    .mini-nav .btn {
+      display: inline-block;
+      background-color: rgb(209, 248, 230);
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      margin: 10px;
+      position: relative;
+      overflow: hidden; 
+      border-radius: 30%;
+      box-shadow: 0 5px 15px -5px #00000022;
+      cursor: pointer;
+    }
+      
+    .mini-nav .btn ion-icon {
+      font-size: 30px;
+      vertical-align: middle;
+    }
+      
+      .mini-nav {
+        height: 10px;
+        margin: auto;
+        margin-top: .5in;
+        font-size: 0;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      
+      .mini-nav .btn ion-icon {
+        color: var(--color);
+      }
+      
+      .mini-nav .btn:before {
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background-color: var(--color);
+        transform: rotate(45deg);
+      }
+      .mini-nav .btn:before {
+        top: 90%;
+        left: -110%;
+      }
+      .mini-nav .btn:focus:before,
+      .mini-nav .btn:hover:before {
+        top: -10%;
+        left: -10%;
+      }
+      
+      .mini-nav .btn:hover ion-icon {
+        color: #fff;
+        transform: scale(1.3);
+      }
+      
+      .mini-nav .btn,
+      .mini-nav .btn:before,
+      .mini-nav .btn ion-icon {
+        transition: all 0.35s;
+        transition-timing-function: 
+          cubic-bezier(0.31, -0.105, 0.43, 1.59);
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+  <div class="container">
+
+    <center><img src="MomHome.jpg" width="300" height="400"></center>
+    <div class="mini-nav">
+      <a href="http://localhost/Act1-5/Activity%204%20home.html" class="btn" style="--color: #632400;">
+        <ion-icon name="home-outline"></ion-icon>
+      </a>
+      <a href="http://localhost/ACT1-5/Activity%204.1.html" class="btn" style="--color: #ff7d7d;">
+        <ion-icon name="rose-outline"></ion-icon>
+      </a>      
+      <a href="http://localhost/Act1-5/Activity%204.2.html" class="btn" style="--color: #E73F29;">
+        <ion-icon name="at-outline"></ion-icon>
+      </a>
+      <a href="http://localhost/Act1-5/Activity%204.3.html" class="btn" style="--color: #070018;">
+        <ion-icon name="images-outline"></ion-icon>
+      </a>
+      <a href="http://localhost/Act1-5/Activty%204.4.html" class="btn" style="--color: #a80ea0;">
+        <ion-icon name="heart-circle-outline"></ion-icon>
+      </a>
+    </div>
+
+  </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

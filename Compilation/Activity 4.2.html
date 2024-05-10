@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> SOCIALS </title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+    width: 100%;
+    background-color: rgb(183, 203, 195);
+    }
+
+    #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 80px;
+    background-color: #c2dfd1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    }
+
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    #navbar li a{
+        text-decoration: none;
+        font-size: 16px; 
+        font-weight: 600;
+        color: #003122;
+    }
+
+    #navbar li a:hover,
+    #navbar li a.active{
+        color: #01a372;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after{
+        content: "";
+        width: 40%;
+        height: 2px;
+        background: #003122;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .main h1 {
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 30px;
+        color: #003122;
+    }
+
+    .main h2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-btns .btn {
+        display: inline-block;
+        background-color: white;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        margin: 10px;
+        position: relative;
+        overflow: hidden; 
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000022;
+        cursor: pointer;
+      }
+
+      .social-btns .btn ion-icon {
+        font-size: 38px;
+        vertical-align: middle;
+      }
+
+      .social-btns {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: .5in;
+        font-size: 0;
+        text-align: center;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .social-btns .btn ion-icon {
+        color: var(--color);
+      }
+
+      /* BG before */
+      .social-btns .btn:before {
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background-color: var(--color);
+        transform: rotate(45deg);
+      }
+      .social-btns .btn:before {
+        top: 90%;
+        left: -110%;
+      }
+      .social-btns .btn:focus:before,
+      .social-btns .btn:hover:before {
+        top: -10%;
+        left: -10%;
+      }
+
+      .social-btns .btn:hover ion-icon {
+        color: #fff;
+        transform: scale(1.3);
+      }
+
+      .social-btns .btn,
+      .social-btns .btn:before,
+      .social-btns .btn ion-icon {
+        transition: all 0.35s;
+        transition-timing-function: 
+          cubic-bezier(0.31, -0.105, 0.43, 1.59);
+      }
+
+      footer {
+    padding: 10px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #c2dfd1;
+    }
+
+    footer .col{
+        padding: 40px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    footer .logo{
+        margin-bottom: 30px;
+    }
+
+    footer h4{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer p {
+    font-size: 16px;
+    color: #003122;  
+    margin: 15px 0 20px 0;
+    }
+
+    footer a{
+        font-size: 18px;
+        text-decoration: none;
+        color: #001a12;
+        margin-bottom: 10px;
+    }
+
+    footer .follow {
+        margin-top: 20px;
+    }
+
+    footer .follow i{
+        color: #001a12;
+        padding-right: 5px;
+        cursor: pointer;
+    }
+
+    footer .follow i:hover,
+    footer a:hover{
+        color:  #01a372;
+    }
+
+    footer .copyright {
+        width: 100%;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+<section id="header">
+    <a href="#"><img src="Books N’ NOOKS.png" alt="my Logo" width="80" height="80"> </a>
+   <!--replace images of you to moms!!-->
+   
+    <div>
+        <ul id="navbar">
+            <li><a href="http://localhost/ACT1-5/Activity%204%20home.html">Home</a></li>
+            <li><a href="http://localhost/ACT1-5/Activity%204.1.html">About</a></li>
+            <li><a class="active"href="http://localhost/ACT1-5/Activity4.2.html">Socials</a></li>
+            <li><a href="http://localhost/Act1-5/Activity%204.3.html">Gallery</a></li>                   
+            <li><a href="http://localhost/Act1-5/Activty%204.4.html">Letter</a></li>
+        </ul>
+    </div>
+</section>
+
+    <div class="main">
+    <h1>Mommy's Socials!</h1>
+    
+
+    <h2>
+        <img src = "mombubble2.jpg" width = "200" height ="200"><img src="mombubble1.jpg" width="400" height="400"><img src ="mombubble3.jpg" width ="200" height ="200">
+    </h2>
+
+    <h3>
+      <div class="social-btns">
+        <a class="btn" style="--color: #3B5998;" href="https://www.facebook.com/jona.gittabao">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a class="btn" style="--color: rgb(186, 43, 253);" href="https://www.instagram.com/jkchaedy?igsh=ZXNzc2NheDN6ZWN1">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a class="btn" style="--color: #fd90bc;" href="https://web.telegram.org/k/#6732129506">
+          <ion-icon name="call-outline"></ion-icon>
+        </a>
+      </div>
+    </h3>
+      
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      </h3>
+    </div>
+
+    <footer>
+        <div class="col">
+            <img class="logo" src="Books N’ NOOKS.png" alt="Logo" width="80" height="80">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Sa puso ni ... Secret</p>
+            <p><strong>Phone:</strong> 09457728145 / 09504597488</p>
+            <p><strong>Email:</strong> Angagkakz@gmail.com</p>
+
+            <div class="follow">
+                <h4>Follow me: </h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="http://localhost/Act1-5/Activity%201.html">About Seller</a>
+            <a href="#">Contact Seller</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="copyright">
+            <p> © 2024, All rights reserved. Made By: KZ ANGAGKA, BSIT1-IDA2</p>
+        </div>
+
+    </footer>
+</body>
+</html>
