@@ -1,0 +1,84 @@
+MAIN COLOR: #003122;
+
+
+H1
+Header and Footer: 6FC380\
+
+Colors:
+3C904D
+BEDACE
+869D7A
+335145
+1E352F
+
+
+BOOKS:
+
+Romance
+Cassandra Claire
+product 1: Clockwork Angel b1
+product 2: clockwork prince b2
+product 3: clockwork princess b3
+
+product 4: City of Bones b1
+product 5: City of Ashes b2
+product 6: City of Glass b3
+product 7: City of Fallen Angels b4
+product 8: City of Lost Souls b5
+product 9: City of Heavenly Fire b6
+
+Alexandra Bracken
+product 10: The Darkest Minds B1
+product 11: Never Fade B2
+product 12: In the After Light B3
+Product 44: Silver in the Bone
+
+Romance
+Keira Cass
+product 13: The Queen
+product 14: The Prince
+product 15: The Selection
+product 16: The Elite
+product 17: The Guard
+product 18: The Favorite
+product 19: The One: Part 1
+product 20: The One: Part 2(Epilogue)
+product 21: The Maid
+product 22: The Heir
+product 23: The Crown
+
+Fantasy
+Beck Michaels:
+product 24: Divine Blood
+product 25: Bonded Fate
+product 26: Shattered Souls
+product 27: Rising Dawn
+
+Fantasy
+J.K Rowling
+product 28: HP and the Sorcerors's Stone
+product 29: HP and the Chamber of Secrets
+Product 30: HP and the Prisoner of Azkaban
+Product 31: HP and the Goblet of Fire
+Product 32: HP and the Order of the Phoenix
+Product 33: HP and the Half-Blood Prince
+Product 34: HP and the Deathly Hallows
+Product 35: HP and the Cursed Child: Part 1 and 2
+
+Romance
+Veronica Roth 
+Product 36: Divergent
+Product 37: Insurgent
+Product 38: Allegiant
+Product 45: We can Be Mended
+
+Young adult
+Meg Cabot
+Product 39: The Princess Diaries
+Product 40: Princes in the Spotlight
+Product 41: Princess in Love
+Product 42: Royal Wedding
+
+
+
+
