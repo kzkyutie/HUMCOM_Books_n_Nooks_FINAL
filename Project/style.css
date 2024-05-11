@@ -250,10 +250,6 @@ button.normal {
     width: 40%;
 }
 
-#email .form button{
-    width: 40%;
-}
-
 #email input {
     height: 3.125rem;
     padding: 0 1.25em;
@@ -270,6 +266,7 @@ button.normal {
     background-color: #001a12;
     color: #01a372;
     white-space: nowrap;
+    width: 40%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
