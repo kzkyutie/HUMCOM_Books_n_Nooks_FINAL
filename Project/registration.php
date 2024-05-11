@@ -15,7 +15,7 @@ $password= $_POST['password'];
 $data = "INSERT INTO registration (fname,lname,email,password) VALUES ('$fname','$lname','$email','$password')";
 $check = mysqli_query($conn, $data);
 if($check) {
-    header('Location: http://localhost/PRODUCTS/Books.html');
+    header('Location: https://kzkyutie.github.io/HUMCOM_Books_n_Nooks_FINAL/');
     exit;
    }
 else {
