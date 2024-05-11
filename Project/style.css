@@ -250,6 +250,10 @@ button.normal {
     width: 40%;
 }
 
+#email .form button{
+    width: 40%;
+}
+
 #email input {
     height: 3.125rem;
     padding: 0 1.25em;
