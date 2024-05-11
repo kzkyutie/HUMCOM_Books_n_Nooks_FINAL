@@ -13,7 +13,7 @@ $password= $_POST['password'];
 $data = "INSERT INTO login (username, password) VALUES ('$username','$password')";
 $check = mysqli_query($conn, $data);
 if($check) {
-    header('Location: http://localhost/PRODUCTS/Books.html');
+    header('Location: Project/Books.html');
     exit;
    }
 else {
