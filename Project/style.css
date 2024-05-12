@@ -264,7 +264,7 @@ button.normal {
 
 #email button {
     background-color: #001a12;
-    height: auto;
+    height: 100%;
     color: #01a372;
     white-space: nowrap;
     border-top-left-radius: 0;
